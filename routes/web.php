@@ -44,4 +44,8 @@ Route::get('/productos', Products::class)->name('products');
 Route::get('/productos/{slug}', ShowProduct::class)->name('product.show');
 require __DIR__.'/auth.php';
 
+Route::get('/fcm', function(){
+    return view('fcm');
+});
+
 Route::get('/contacto', ContactForm::class)->name('contacto');

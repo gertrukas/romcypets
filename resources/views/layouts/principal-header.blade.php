@@ -1,9 +1,9 @@
         <header>
-            <nav class="border-gray-200">
-                <div class="container mx-auto flex flex-wrap items-center justify-between">
+            <nav class="">
+                <div class=" mx-auto flex flex-wrap items-center justify-between">
 
                     <a href="/" class="flex justify-center items-center p-4">
-                        <img src='{{ asset('images/electronicadosmil.png') }}' width="200" height="auto">
+                        <img src='{{ asset('images/romcypets.webp') }}' width="240" height="auto">
                     </a>
 
                     <button data-collapse-toggle="mobile-menu" type="button"
@@ -27,47 +27,10 @@
 
                         <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
                             <li>
-                                <a href="#" class="-nav-button" aria-current="page">Home</a>
+                                <a href="/quienes-somos" class="-nav-button" aria-current="page">Somos</a>
                             </li>
                             <li>
-                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                    class="rounded text-azul hover:bg-azul border-b border-gray-100  md:hover:text-white
-                                 md:border-0 pl-3 pr-4 py-2 md:px-4 md:py-0 font-medium flex items-center justify-between w-full md:w-auto">Productos
-                                    <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg></button>
-                                <!-- Dropdown menu -->
-                                <div id="dropdownNavbar"
-                                    class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
-                                    <ul class="py-1" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="#"
-                                                class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Categoría
-                                                1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Categoría
-                                                1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Categoría
-                                                1</a>
-                                        </li>
-                                    </ul>
-                                    <div class="py-1">
-                                        <a href="#"
-                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Todos los
-                                            productos</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="-nav-button">Servicios</a>
+                                <a href="/servicios" class="-nav-button">Servicios</a>
                             </li>
                             <li>
                                 <a href="/contacto" class="-nav-button">Contacto</a>
@@ -80,5 +43,16 @@
 
 
             <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+
+            <div>
+                <a href="https://wa.me/524424911549?text='hola%20RomcyPets"  target="_blank"
+                class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition">
+                    <!-- WhatsApp Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.52 3.48A11.78 11.78 0 0 0 12.03 0C5.41 0 .06 5.22.06 11.73c0 2.07.54 4.1 1.59 5.9L0 24l6.5-1.7a12.02 12.02 0 0 0 5.53 1.35h.01c6.62 0 12.03-5.22 12.03-11.73 0-3.13-1.23-6.07-3.55-8.37zM12.03 21.3c-1.7 0-3.36-.45-4.82-1.3l-.35-.2-3.86 1.03 1.03-3.74-.23-.38a9.66 9.66 0 0 1-1.48-5.16c0-5.33 4.36-9.67 9.71-9.67 2.6 0 5.03 1 6.87 2.8a9.52 9.52 0 0 1 2.83 6.87c0 5.33-4.36 9.67-9.7 9.67zm5.24-7.25c-.28-.14-1.65-.82-1.91-.91-.26-.1-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.6.07-.28-.14-1.18-.44-2.25-1.41-.83-.74-1.39-1.64-1.55-1.91-.16-.28-.02-.43.12-.57.12-.12.28-.33.4-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.47h-.55c-.19 0-.49.07-.75.35-.26.28-1 1-1 2.42 0 1.42 1.02 2.79 1.16 2.98.14.19 2 3.16 4.85 4.43.68.29 1.21.46 1.63.59.68.22 1.3.19 1.79.12.55-.08 1.65-.67 1.88-1.33.23-.66.23-1.23.16-1.33-.07-.1-.26-.16-.54-.3z"/>
+                    </svg>
+                </a>
+
+            </div>
 
         </header>

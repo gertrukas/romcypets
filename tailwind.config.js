@@ -16,9 +16,13 @@ export default {
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
                 principal: ['"Be Vietnam Pro"', "sans-serif"],
+                libre: ["'Libre Baskerville'", "serif"],
             },
             colors: {
                 "azul" : "#384985",
+                "base10": "#532A12",
+                "base30": "#AA8E85",
+                "base60": "#FEECE3",
                 "bright-red": "hsl(12, 88%, 59%)",
                 "dark-blue": "hsl(228, 39%, 23%)",
                 "dark-grayish-blue": "hsl(227, 12%, 61%)",

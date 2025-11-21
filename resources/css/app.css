@@ -9,6 +9,16 @@
         border: 1px solid red;
     }
 
+    p{
+        font-size: 26px;
+        @apply text-base10
+    }
+
+    h1{
+        font-size: 2rem
+    }
+
+
     .wrapper {
         @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
     }
@@ -17,6 +27,9 @@
         @apply bg-bright-red text-vary-light-gray block w-max py-4 px-12 rounded-full;
     }
 
+    .-razas{
+        font-size: 48px;
+    }
 
     .footer-area {
         grid-template-areas:
@@ -70,11 +83,11 @@
  */
 
 .-nav-button{
-    @apply  text-azul px-4 rounded focus:outline-none hover:text-white hover:bg-azul;
+    @apply  text-base10 px-4 rounded focus:outline-none hover:text-white hover:bg-base10;
 }
 
 .-ver-mas{
-    @apply bg-azul hover:bg-orange-500 text-white font-bold py-2 px-4 m-4 rounded;
+    @apply text-2xl bg-base30 hover:bg-base10 text-white py-2 px-4 m-4 rounded shadow-base10/50;
 }
 .-titulo{
     @apply text-orange-500;
