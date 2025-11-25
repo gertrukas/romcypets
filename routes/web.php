@@ -24,6 +24,22 @@ Route::get('/blog/{slug}', ShowBlog::class)->name('blog.show');
 
 Route::get('/comunicados', BlogIndex::class)->name('blogs.index');
 
+Route::get('/aviso-de-privacidad', function () {
+    $title = 'Aviso de privacidad';
+    $otra_var = 5;
+
+    return view('aviso-de-privacidad', compact('title', 'otra_var'));
+});
+
+Route::get('/federacion-canofila-mexicana', function () {
+    $title = 'Federación Canofila Mexicana';
+
+    return view('federacion-canofila-mexicana', compact('title',));
+});
+
+
+Route::get('/contacto', ContactForm::class)->name('contacto');
+
 Route::get('/dashboard', function () {
     if (Auth::check()) {
         if (Auth::user()->isAdmin()) {
@@ -48,4 +64,4 @@ Route::get('/fcm', function(){
     return view('fcm');
 });
 
-Route::get('/contacto', ContactForm::class)->name('contacto');
+

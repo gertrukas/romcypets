@@ -12,7 +12,7 @@
         <p>Este respaldo garantiza que nuestros procesos de cría cumplen con los estándares de bienestar, trazabilidad y transparencia establecidos por la FCM.</p>
 
         <div class="flex justify-end">
-            <a href="/fcm">
+            <a href="/federacion-canofila-mexicana">
                 <button class="-ver-mas inline-block">Ver más</button>
             </a>
         </div>
