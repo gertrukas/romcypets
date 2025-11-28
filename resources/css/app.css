@@ -26,11 +26,15 @@
     }
 
     .-titulo{
-        @apply bg-base10 text-base60 text-right p-4 font-libre text-xl
+        @apply bg-base10 text-base60 text-right p-4 font-libre text-xl mt-2
     }
 
     .-titulo p{
         @apply text-base60
+    }
+
+    .-breadcrumb{
+        @apply  border-t border-b border-base10 pl-4
     }
 
     .-lista{
@@ -39,6 +43,8 @@
         list-style-position: outside;
         
     }
+
+
 
 
     .wrapper {
@@ -51,7 +57,6 @@
 
     .-razas{
         font-size: 48px;
-
     }
 
     .-centrado{

@@ -1,4 +1,4 @@
-<footer class="px-0 divide-y bg-base10">
+<footer class="container px-0 divide-y bg-base10">
 
 	<div class="flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
 
@@ -6,7 +6,7 @@
             <a href="/" class=" bg-base30"><img src='{{ asset('images/romcypets.webp') }}' alt="RomcyPets" class=" p-4" ></a>
 		</div>
 
-		<div class="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
+		<div class="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4 px-4">
 			<div class="space-y-3">
 				<h3 class="text-xl font-semibold mb-2 border-b-2 border-orange-500 pb-1 inline-block text-white">Descubre</h3>
                 <nav>

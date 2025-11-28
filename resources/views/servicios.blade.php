@@ -3,11 +3,40 @@
 
 
 @section('content')
-    <div class="-titulo"><h1 class="text-base60">Servicios</h1></div>
+       <div class="div wrapper">
+        <nav class="flex bg-base30 text-white border border-gray-200 py-3 px-5 rounded-lg" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                <a href="#" class="text-sm text-base60 hover:text-base10 inline-flex items-center">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+                    Inicio
+                </a>
+                </li>
+                <li>
+                <div class="flex items-center">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    <h2  class=" text-base60 hover:text-bas30 ml-1 md:ml-2 text-sm font-medium ">Servicios</h2>
+                </div>
+                </li>
+            </ol>
+        </nav>
+    </div>
 
+
+
+
+<section class="pt-8">
+  <div class="w-full bg-cover bg-center bg-no-repeat h-[40rem] flex items-end justify-center" style="background-image: url('{{ asset('images/servicios-criadero.webp') }}')">
+      
+      <h1 class=" text-white sm:text-1xl md:text-3xl lg:text-6xl text-center pb-20 font-libre">
+          Criar con amor, responsabilidad y respeto… porque cada cachorro merece un comienzo extraordinario.
+      </h1>
+
+  </div>
+</section>
 
     <div class="m-6 p-6">       
-        <h1 class="text-base10">Criar con amor, responsabilidad y respeto… porque cada cachorro merece un comienzo extraordinario.</h1>
+        
 
         <br>
         <h2>SALUD, BIENESTAR Y GARANTÍAS</h2>
