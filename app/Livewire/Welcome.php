@@ -1,13 +1,12 @@
 <?php
+
 namespace App\Livewire;
 
 use App\Models\Blog;
-use App\Models\Product;
 use Livewire\Component;
 
 class Welcome extends Component
 {
-
     /**
      * Renderiza la vista del componente.
      *
@@ -15,13 +14,13 @@ class Welcome extends Component
      */
     public function render()
     {
-
         $blogs = Blog::where('is_published', 1)
-                            ->wherenotNull('published_at')
-                            ->inRandomOrder()
-                            ->limit(3)->get();
+            ->wherenotNull('published_at')
+            ->inRandomOrder()
+            ->limit(3)->get();
+
         return view('livewire.welcome', [
-            'blogs'       => $blogs,
+            'blogs' => $blogs,
         ])->layout('layouts.principal');
     }
 }

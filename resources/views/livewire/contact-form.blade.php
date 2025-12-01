@@ -1,7 +1,18 @@
 <div>
     <div class="wrapper py-12 lg:py-20">
         <div class="max-w-3xl mx-auto">
-
+            @if (session()->has('error'))
+                <div class="mb-6 p-4 bg-red-50 border-l-4 border-red-500 text-red-800 rounded">
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="font-medium">{{ session('error') }}</span>
+                    </div>
+                </div>
+            @endif
             <!-- Encabezado -->
             <div class="text-center mb-12">
                 <h1 class="text-4xl lg:text-5xl font-bold text-azul mb-4">
@@ -157,10 +168,22 @@
                     </div>
                     <h3 class="font-bold text-gray-800 mb-2">Email</h3>
                     <p class="text-gray-600">Escríbenos a</p>
-                    <a href="mailto:contacto@electronicadosmil.com"
+                    <p
                         class="text-xs text-azul font-semibold hover:text-orange-500 transition-colors duration-300 hover:underline break-words block">
-                        contacto@electronicadosmil.com
-                    </a>
+                        {{ env('MAIL_CONTACT_ADDRESS', 'contacto@electronicadosmil.com') }}</p>
+                    <div class="pt-4 text-center">
+                        <p class="text-sm text-gray-600 mb-2">¿Prefieres usar Gmail?</p>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contacto@electronicadosmil.com&su=Consulta desde el sitio web&body=Hola, me gustaría obtener más información sobre..."
+                            target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center text-azul hover:text-orange-500 font-semibold transition-colors duration-300">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            Abrir Gmail
+                        </a>
+                    </div>
                 </div>
 
                 <div
