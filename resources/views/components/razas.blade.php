@@ -4,7 +4,7 @@
     <div class="p-4 flex flex-col items-center justify-center text-center">
 
         <p class="-razas font-libre text-base30">
-            Pomeranias,<br> 
+            Pomeranian,<br> 
             Shih Tzu <br>
             y <br>
             Yorkies

@@ -52,7 +52,7 @@
         </div>
         <div class="">
             <h2  class="">Misión </h2>
-            <p>En Romcy Pets criamos Pomeranians, Shih Tzu y Yorkies con amor, respeto y responsabilidad, fomentando su bienestar físico, emocional y energético. Acompañamos a cada cachorro y a su familia en un camino de crecimiento, aprendizaje y armonía, creando vínculos auténticos y llenos de amor.</p>            
+            <p>En Romcy Pets criamos Pomeranian, Shih Tzu y Yorkies con amor, respeto y responsabilidad, fomentando su bienestar físico, emocional y energético. Acompañamos a cada cachorro y a su familia en un camino de crecimiento, aprendizaje y armonía, creando vínculos auténticos y llenos de amor.</p>            
         </div>
        
     </div>
