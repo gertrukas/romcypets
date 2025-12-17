@@ -3,12 +3,12 @@
     
     <div class="p-4 flex flex-col items-center justify-center text-center">
 
-        <p class="-razas font-libre text-base30">
+        <h1 class="-razas font-libre text-base30">
             Pomeranian,<br> 
             Shih Tzu <br>
             y <br>
             Yorkies
-        </p>
+        </h1>
 
         <a href="/razas">
             <button id="conocer-mas" class="-ver-mas txt-2xl inline-block">Conocer más</button>
