@@ -56,7 +56,7 @@ class ContactForm extends Component
             ]);
 
             // Enviar correos
-            $contactEmail = env('MAIL_CONTACT_ADDRESS', 'contacto@electronicadosmil.com');
+            $contactEmail = env('MAIL_CONTACT_ADDRESS', 'gerardo.trujillo@gmail.com');
 
             // Correo a la empresa
             Mail::to($contactEmail)->send(
