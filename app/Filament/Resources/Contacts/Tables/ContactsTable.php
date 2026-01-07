@@ -8,6 +8,7 @@ use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ToggleColumn;
 use Filament\Tables\Table;
 
 class ContactsTable
@@ -29,15 +30,20 @@ class ContactsTable
                     ->label('Teléfono')
                     ->searchable()
                     ->sortable(),
-                IconColumn::make('is_read')
-                    ->label('¿Leído?')
+                TextColumn::make('comments')
+                    ->label('Coementario')
                     ->searchable()
                     ->sortable()
-                    ->boolean(),
+                    ->limit(50),
+                ToggleColumn::make('is_read')
+                    ->label('¿Leído?')
+                    ->searchable()
+                    ->sortable(),
+
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->since(),
                 TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()
@@ -54,6 +60,7 @@ class ContactsTable
                 BulkActionGroup::make([
                     DeleteBulkAction::make(),
                 ]),
-            ]);
+            ])
+            ->defaultSort('created_at', 'desc');
     }
 }
