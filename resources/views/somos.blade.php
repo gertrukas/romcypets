@@ -75,7 +75,7 @@
             <h2>REGULACIÓN Y RESPALDO</h2>
             <p>Nuestro criadero está regulado por la Federación Canófila Mexicana (FCM) y dado de alta ante Hacienda, operando bajo lineamientos legales y fiscales en regla.</p>
             <div class="p-4 mt-5">
-        <img src='{{ asset('images/federacion-canofila-mexicana.png') }}' class="w-full" alt="romcy pets federacion canofila mexicana">
+        <img src='{{ asset('images/') }}' class="w-full" alt="romcy pets federacion canofila mexicana">
     </div>
             <p>Este respaldo garantiza que nuestros procesos de cría cumplen con los estándares de bienestar, trazabilidad y transparencia establecidos por la FCM.</p>
             <p>Todos nuestros cachorros cuentan con opción a Pedigree o Certificado de Pureza Racial, y pueden ser verificados mediante el número de registro o microchip ante la Federación.</p>
