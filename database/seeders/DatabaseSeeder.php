@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Filament\Resources\Brands\Tables\BrandsTable;
 use App\Models\Product;
 use App\Models\ProductCategory;
 use App\Models\User;
@@ -39,6 +40,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call(RolesAndPermissionsSeeder::class);
         $this->call(UsersTableSeeder::class);
+        $this->call(BrandSeeder::class);
         $this->call(CategorySeeder::class);
         $this->call(AuthorSeeder::class);
         $this->call(BlogSeeder::class);

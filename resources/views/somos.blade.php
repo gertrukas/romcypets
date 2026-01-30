@@ -26,15 +26,17 @@
 
 
     
-    <div class="wrapper -centrado grid grid-cols-1 md:grid-cols-2 gap-2">
-        <div class="py-4 text-center col-span-2"><h1 class="text-base10">Criadero responsable, regulado y con amor</h1></div>
-        <div>
+     <div class="wrapper -centrado grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2" id="quienes-somos">
+        <div class="py-4 text-center sm:col-span-2 md:col-span-2 lg:col-span-2">
+            <h1 class="text-base10">Criadero responsable, regulado y con amor</h1>
+        </div>
+       <div class="col-span-1 pl-2">
             <h2>quienes somos</h2>
             <p>Antes conocidos como Pets Martel, desde 2024 evolucionamos a Romcy Pets, un criadero familiar que nació del amor, la dedicación y el respeto hacia los perros.</p>
             <p>Con más de 10 años de experiencia, criamos con responsabilidad y ética las razas Pomeranian, Shih Tzu y Yorkshire Terrier, asegurando siempre el bienestar, la salud y el equilibrio emocional de cada cachorro.</p>
         </div>
         <div>
-             <img src='{{ asset('images/nancy-romero.webp') }}' class="w-full pt-2" alt="romcy pets Nancy Romero">
+             <img src='{{ asset('images/nancy-romero.webp') }}' class="w-full pt-2 m-auto pr-2" alt="romcy pets Nancy Romero">
         </div>
     </div>
 
@@ -48,9 +50,9 @@
 
      <div class="wrapper -centrado grid grid-cols-1 md:grid-cols-2 gap-2 pt-4">
          <div>
-             <img src='{{ asset('images/shih-tzu.webp') }}' class="w-full pt-2" alt="romcy pets Shih Tzu cachorros">
+             <img src='{{ asset('images/shih-tzu.webp') }}' class="m-auto pt-2 content-center"" alt="romcy pets Shih Tzu cachorros">
         </div>
-        <div class="">
+        <div class="pl-2">
             <h2  class="">Misión </h2>
             <p>En Romcy Pets criamos Pomeranian, Shih Tzu y Yorkies con amor, respeto y responsabilidad, fomentando su bienestar físico, emocional y energético. Acompañamos a cada cachorro y a su familia en un camino de crecimiento, aprendizaje y armonía, creando vínculos auténticos y llenos de amor.</p>            
         </div>
@@ -59,24 +61,24 @@
 
      <div class="wrapper -centrado grid grid-cols-1 md:grid-cols-2 gap-2 pt-4">
          
-        <div class="">
+        <div class="pl-2">
             <h2>Visión </h2>
             <p>Ser un criadero que inspire confianza, respeto y conexión emocional entre personas y perros, reconocido por la dedicación, ética y crianza holística. Queremos que cada cachorro de Romcy Pets sea un reflejo de equilibrio, alegría y amor, transmitiendo a su familia felicidad y bienestar en cada etapa de su vida.</p>
         </div>
         <div>
-             <img src='{{ asset('images/nancy-romero-razas.webp') }}' class="w-full pt-2" alt="romcy pets Shih Tzu y Yorkie">
+             <img src='{{ asset('images/nancy-romero-razas.webp') }}' class="m-auto pt-2 content-center pt-2" alt="romcy pets Shih Tzu y Yorkie">
         </div>
        
     </div>
 
 
     <div class="wrapper -centrado py-8">
-        <div>
+        <div class="pl-2">
             <h2>REGULACIÓN Y RESPALDO</h2>
             <p>Nuestro criadero está regulado por la Federación Canófila Mexicana (FCM) y dado de alta ante Hacienda, operando bajo lineamientos legales y fiscales en regla.</p>
             <div class="p-4 mt-5">
-        <img src='{{ asset('images/') }}' class="w-full" alt="romcy pets federacion canofila mexicana">
-    </div>
+        <img src='{{ asset('images/federacion-canofila-mexicana.webp') }}' class="w-full" alt="romcy pets federacion canofila mexicana">
+    </div class="pl-2">
             <p>Este respaldo garantiza que nuestros procesos de cría cumplen con los estándares de bienestar, trazabilidad y transparencia establecidos por la FCM.</p>
             <p>Todos nuestros cachorros cuentan con opción a Pedigree o Certificado de Pureza Racial, y pueden ser verificados mediante el número de registro o microchip ante la Federación.</p>
             <p>Además, Romcy Pets formó parte del Calendario Oficial 2024 de la Federación Canófila Mexicana, reconocimiento que avala nuestra trayectoria y compromiso como criadores responsables.</p>

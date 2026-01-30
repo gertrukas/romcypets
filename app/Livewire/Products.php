@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Brand;
 use App\Models\Product;
 use App\Models\ProductCategory;
 use Livewire\Component;
@@ -12,6 +13,7 @@ class Products extends Component
     use WithPagination;
 
     public $categories;
+    public $brands;
     public $selectedCategory = 'all';
     public $searchQuery = '';
     public $perPage = 12;
@@ -20,6 +22,7 @@ class Products extends Component
     public function mount()
     {
         $this->categories = ProductCategory::with('products')->get();
+        $this->brands = Brand::orderBy('name')->get();
     }
 
     public function render()
@@ -35,6 +38,10 @@ class Products extends Component
             }
         }
 
+         if ($this->selectedBrand !== 'all') {
+            $productsQuery->where('brand_id', $this->selectedBrand);
+        }
+
         if ($this->searchQuery) {
             $productsQuery->where('name', 'like', '%' . $this->searchQuery . '%');
         }
@@ -43,13 +50,19 @@ class Products extends Component
 
         return view('livewire.products', [
             'products' => $products,
-        ])->layout('layouts.principal-productos');
+        ])->layout('layouts.principal');
     }
 
     // Nuevo método para alternar la visibilidad del menú
     public function toggleMoreCategories()
     {
         $this->showMoreCategories = !$this->showMoreCategories;
+    }
+     
+    public function filterByBrand($brandId)
+    {
+        $this->selectedBrand = $brandId;
+        $this->resetPage();
     }
 
     public function filterByCategory($categoryId)

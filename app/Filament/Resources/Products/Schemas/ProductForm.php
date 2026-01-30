@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Filament\Resources\Products\Schemas;
 
 use Filament\Forms\Components\FileUpload;
@@ -6,6 +7,7 @@ use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Group;
 use Filament\Schemas\Schema;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 
@@ -15,29 +17,8 @@ class ProductForm
     {
         return $schema
             ->components([
-                TextInput::make('name')
-                    ->required()
-                    ->unique(ignoreRecord: true)
-                    ->validationMessages([
-                        'required' => 'El Nombre es obligatorio.',
-                        'unique'   => 'Este nombre ya existe. Por favor, elige uno diferente.',
-                    ]),
-                Select::make('categories')
-                    ->relationship('categories', 'name')
-                    ->label('Categorías')
-                    ->multiple()
-                    ->preload()
-                    ->required(),
-                Toggle::make('is_active')
-                    ->label('¿Activo?')
-                    ->required(),
-                Toggle::make('destacado')
-                    ->label('Destacado?')
-                    ->required(),
-                TextInput::make('short_description')
-                    ->label('Descripción Corta')
-                    ->maxLength(255)
-                    ->columnSpanFull(),
+                
+                
                 RichEditor::make('description')
                     ->label('Descripción')
                     ->columnSpanFull()
