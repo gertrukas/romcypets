@@ -30,8 +30,12 @@
                                 <a href="/quienes-somos" class="-nav-button" aria-current="page">Somos</a>
                             </li>
                             <li>
+                                <a href="/razas" class="-nav-button">Razas</a>
+                            </li>
+                            <li>
                                 <a href="/servicios" class="-nav-button">Servicios</a>
                             </li>
+                            
                             <li>
                                 <a href="/contacto" class="-nav-button">Contacto</a>
                             </li>
