@@ -1,4 +1,4 @@
-        <header class="container">
+        <header class="wrapper">
             <nav class="">
                 <div class="flex flex-wrap items-center justify-between">
 

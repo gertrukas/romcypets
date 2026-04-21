@@ -27,13 +27,15 @@
 
     
      <div class="wrapper -centrado grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2" id="quienes-somos">
-        <div class="py-4 text-center sm:col-span-2 md:col-span-2 lg:col-span-2">
-            <h1 class="text-base10">Criadero responsable, regulado y con amor</h1>
-        </div>
+        
        <div class="col-span-1 pl-2">
             <h2>Quiénes somos</h2>
-            <p>Antes conocidos como Pets Martel, desde 2024 evolucionamos a Romcy Pets, un criadero familiar que nació del amor, la dedicación y el respeto hacia los perros.</p>
-            <p>Con más de 10 años de experiencia, criamos con responsabilidad y ética las razas Pomeranian, Shih Tzu y Yorkshire Terrier, asegurando siempre el bienestar, la salud y el equilibrio emocional de cada cachorro.</p>
+            <p>Soy Nancy Romero, y Romcy Pets nace desde el amor profundo por los animales y el deseo de hacer las cosas de manera diferente.</p>
+            <p>Aquí no solo acompañamos el inicio de vida de cada perrito, creamos un entorno donde crecen rodeados de atención, respeto y cariño real. Cada uno es cuidado como parte de nuestra familia, priorizando siempre su bienestar, su salud y su equilibrio emocional.</p>
+            <p>Creemos que un perrito no es una compra, es un vínculo para toda la vida. Por eso, más que ofrecerte un nuevo integrante, te acompañamos en un proceso lleno de confianza, cercanía y responsabilidad.</p>   
+            <p>Detrás de Romcy Pets hay dedicación diaria, compromiso genuino y mucho amor en cada detalle. Nuestro propósito es que cada pequeño llegue a su nuevo hogar sano, feliz y listo para formar parte de una familia que lo ame tanto como nosotros.</p>
+            <p>Si estás aquí, no es casualidad… estás a punto de encontrar un compañero de vida.</p>
+
         </div>
         <div>
              <img src='{{ asset('images/nancy-romero.webp') }}' class="w-full pt-2 m-auto pr-2" alt="romcy pets Nancy Romero">

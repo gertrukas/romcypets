@@ -12,6 +12,7 @@
                 <nav>
                     <ul class="text-sm space-y-1">
                         <li><a href="/quienes-somos" class="hover:text-orange-500 transition-colors duration-300 text-white">Somos</a></li>
+						<li><a href="/razas" class="hover:text-orange-500 transition-colors duration-300 text-white">Razas</a></li>
                         <li><a href="/servicios" class="hover:text-orange-500 transition-colors duration-300 text-white">Servicios</a></li>
                         <li><a href="/contacto" class="hover:text-orange-500 transition-colors duration-300 text-white">Contacto</a></li>
                         
